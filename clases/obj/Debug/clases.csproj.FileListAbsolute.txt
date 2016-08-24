@@ -1,0 +1,8 @@
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\clases\bin\Debug\clases.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\clases\bin\Debug\clases.pdb
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\clases\obj\Debug\clases.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\clases\obj\Debug\clases.pdb
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\clases\bin\Debug\clases.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\clases\bin\Debug\clases.pdb
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\clases\obj\Debug\clases.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\clases\obj\Debug\clases.pdb

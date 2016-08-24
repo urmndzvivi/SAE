@@ -1,0 +1,452 @@
+﻿/*----------------------------------------------------------
+El color base de esta plantilla es #5c87b2. Si desea usar
+otro color, empiece por reemplazar todas las instancias de
+#5c87b2 con el nuevo color.
+----------------------------------------------------------*/
+body {background:transparent;;border:0;font:13px Arial,Helvetica,sans-serif;color:#0e0e0e;line-height:18px}
+#logo {display:block;background:url(../images/logo.png) 0 0 no-repeat;width:209px;height:68px;text-indent:-9999px}
+#menu li a:hover, #menu #menu_active a {color:#fff;background:url(../images/menu_bg_active.gif) top repeat-x}
+#menu li a:hover span, #menu #menu_active a span {background:url(../images/menu_bg_left_active.gif) top left no-repeat}
+#menu li a:hover span span, #menu #menu_active a span span {background:url(../images/menu_bg_right_active.gif) top right no-repeat}
+#menu .nav3 a:hover, #menu .nav3#menu_active a {background:url(../images/menu_nav3_bg.gif) top repeat-x}
+#menu .nav3 a:hover span, #menu .nav3#menu_active a span {background:url(../images/menu_nav3_left.gif) top left no-repeat}
+#menu .nav3 a:hover span span, #menu .nav3#menu_active a span span {background:url(../images/menu_nav3_right.gif) top right no-repeat}
+#menu .nav4 a:hover, #menu .nav4#menu_active a {background:url(../images/menu_nav4_bg.gif) top repeat-x}
+#menu .nav4 a:hover span, #menu .nav4#menu_active a span {background:url(../images/menu_nav4_left.gif) top left no-repeat}
+#menu .nav4 a:hover span span, #menu .nav4#menu_active a span span {background:url(../images/menu_nav4_right.gif) top right no-repeat}
+#menu .nav5 a:hover, #menu .nav5#menu_active a {background:url(../images/menu_nav5_bg.gif) top repeat-x}
+#menu .nav5 a:hover span, #menu .nav5#menu_active a span {background:url(../images/menu_nav5_left.gif) top left no-repeat}
+#menu .nav5 a:hover span span, #menu .nav5#menu_active a span span {background:url(../images/menu_nav5_right.gif) top right no-repeat}
+#menu .nav6 a:hover span span, #menu .nav5#menu_active a span span {background:url(../images/menu_nav6_right.gif) top right no-repeat}
+#gallery {
+    font-size: 15px;
+    line-height: 1.2em;
+    color: #fff;
+    padding: 43px 0 0 45px;
+    letter-spacing: -1px;
+    float: right;
+    width: 78px;
+    position: relative;
+}
+footer {color:#aaa;font-size:12px;padding:27px 0 36px 0;text-align:center;width:100%;overflow:hidden}
+footer a {color:#fff}
+footer a:hover {}
+#menu li a span span {
+    
+    padding: 0 22px;
+    height: 56px;
+}
+.page1{
+    height: 700px;
+    background: url(../images/header_bg.png) center 131px no-repeat;}
+    .text {
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #fff;
+    padding: 43px 0 0 125px;
+    letter-spacing: -1px;
+    float: left;
+    width: 500px;
+    position: relative;
+}
+.text .tittle {
+    font-size: 54px;
+    line-height: 1.2em;
+    display: block;
+    letter-spacing: -2px;
+    margin-bottom: -10px;
+}
+.text p {
+    padding-left: 5px;
+    padding-bottom: 0px;
+}
+.text .tittle span {
+    font-size: 36px;
+    line-height: 1.2em;
+    padding: 21px 0 21px 0;
+    color: #000;
+    display: block;
+    margin-top: -22px;
+    letter-spacing: -1px;
+}
+.body2 {
+    background: #e6e6e6;
+    border-bottom: 1px solid #4e4e4e;
+}
+#content2 {
+    padding-bottom: 49px;
+    width: 100%;
+    overflow: hidden;
+}
+.col_2 {
+    width: 131px;
+    padding-left: 50px;
+    float: left;
+}
+.col_1 {
+    width: 161px;
+    padding-left: 50px;
+    float: left;
+}
+#icons li {
+    line-height: 24px;
+    font-size: 12px;
+}
+.address {
+    line-height: 24px;
+    font-size: 12px;
+}
+.address span {
+    width: 57px;
+    float: left;
+    color: #000;
+}
+.main{
+    margin: 0 auto;
+    width: 980px;
+}
+.gallery {position:relative;height:327px;width:340px;float:right;padding-right:60px}
+.gallery img {display:block;width:100%;height:100%}
+
+
+/*.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;
+            line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+/*body
+{
+    background-color: #5c87b2;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}*/
+
+a:link
+{
+    color: #034af3;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: #0e0e0e;
+}
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+a:active
+{
+    color: #12eb87;
+}
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* TÍTULOS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2
+{
+    padding: 0 0 10px 0;
+}
+h3
+{
+    font-size: 1.2em;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* esta regla crea etiquetas <h2> que son el 
+primer elemento secundario de las columnas de tabla izquierda y derecha */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0;
+}
+
+/* ELEMENTOS DE DISEÑO PRIMARIO   
+----------------------------------------------------------*/
+
+/* puede especificar un porcentaje mayor o menor para el 
+ancho de página. O bien puede especificar un ancho de píxel exacto. */
+.page
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+#header h1
+{
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px !important;
+}
+
+#main
+{
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    _height: 1px; /* solo IE6 aplica las propiedades de CSS con un carácter de subrayado inicial */
+}
+
+#footer
+{
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+    font-size: .9em;
+}
+
+/* MENÚ TABULADOR   
+----------------------------------------------------------*/
+ul#menu
+{
+    border-bottom: none
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #034af3;
+}
+
+ul#menu li a:hover
+{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+/* ELEMENTOS DE DISEÑO DE FORMULARIOS  
+----------------------------------------------------------*/
+
+fieldset 
+{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #0e0e0e;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input[type="text"] 
+{
+    width: 200px;
+    border: 1px solid #0e0e0e;
+}
+
+input[type="password"] 
+{
+    width: 200px;
+    border: 1px solid #0e0e0e;
+}
+
+/* TABLA
+----------------------------------------------------------*/
+
+table 
+{
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 5px;   
+  border: solid 1px #e8eef4;
+}
+
+table th
+{
+  padding: 6px 5px;
+  text-align: left;
+  background-color: #e8eef4; 
+  border: solid 1px #e8eef4;   
+}
+
+/* VARIOS  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color:Red;
+}
+
+#menucontainer
+{
+    margin-top:40px;
+}
+
+div#title
+{
+    display:block;
+    float:left;
+    text-align:left;
+}
+
+#logindisplay
+{
+    font-size:1.1em;
+    display:block;
+    text-align:right;
+    margin:10px;
+    color:#0e0e0e;;
+}
+
+#logindisplay a:link
+{
+    color:#151aff;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited
+{
+    color:#151aff;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para aplicaciones auxiliares de validación
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Estilos para aplicaciones auxiliares de editor y visualización
+----------------------------------------------------------*/
+.display-label,
+.editor-label,
+.display-field,
+.editor-field
+{
+    margin: 0.5em 0;
+}
+
+.text-box
+{
+    width: 30em;
+}
+
+.text-box.multi-line
+{
+    height: 6.5em;
+}
+
+.tri-state
+{
+    width: 6em;
+}

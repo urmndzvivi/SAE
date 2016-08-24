@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="proyectoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="proyectoModelStoreContainer">
+    <EntitySet Name="ADMINISTRADOR" EntityType="proyectoModel.Store.ADMINISTRADOR" store:Type="Tables" store:Schema="dbo" store:Name="ADMINISTRADOR">
+      <DefiningQuery>SELECT 
+      [ADMINISTRADOR].[Nombre] AS [Nombre], 
+      [ADMINISTRADOR].[correo] AS [correo], 
+      [ADMINISTRADOR].[contraseña] AS [contraseña], 
+      [ADMINISTRADOR].[rep_contraseña] AS [rep_contraseña]
+      FROM [dbo].[ADMINISTRADOR] AS [ADMINISTRADOR]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="APRENDIZ" EntityType="proyectoModel.Store.APRENDIZ" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EQUIPO" EntityType="proyectoModel.Store.EQUIPO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ES_VALIDADO" EntityType="proyectoModel.Store.ES_VALIDADO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="proyectoModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VIGILANTE" EntityType="proyectoModel.Store.VIGILANTE" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'proyecto.dbo.ADMINISTRADOR' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="ADMINISTRADOR">
+    <Key>
+      <PropertyRef Name="correo" />
+    </Key>
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="correo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="contraseña" Type="nvarchar" MaxLength="50" />
+    <Property Name="rep_contraseña" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="APRENDIZ">
+    <Key>
+      <PropertyRef Name="ID_APRENDIZ" />
+    </Key>
+    <Property Name="ID_APRENDIZ" Type="int" Nullable="false" />
+    <Property Name="APR_ID_APRENDIZ" Type="int" />
+    <Property Name="AP_NOMBRES" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="AP_APELLIODOS" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="AP_DIRECCION" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="AP_TELEFONO" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="EQUIPO">
+    <Key>
+      <PropertyRef Name="COD_EQUIPO" />
+    </Key>
+    <Property Name="COD_EQUIPO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ID_APRENDIZ" Type="int" Nullable="false" />
+    <Property Name="EQ_MARCA" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="EQ_COLOR" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="EQ_PULGADAS" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="EQ_TIPOEQUIPO" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ES_VALIDADO">
+    <Key>
+      <PropertyRef Name="COD_EQUIPO" />
+      <PropertyRef Name="ID_VIGILANTE" />
+    </Key>
+    <Property Name="COD_EQUIPO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ID_VIGILANTE" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="VIGILANTE">
+    <Key>
+      <PropertyRef Name="ID_VIGILANTE" />
+    </Key>
+    <Property Name="ID_VIGILANTE" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="VIG_NOMBRES" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="VIG_APELLIDOS" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="VIG_DIRECCION" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="VIG_TELEFONO" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+</Schema>

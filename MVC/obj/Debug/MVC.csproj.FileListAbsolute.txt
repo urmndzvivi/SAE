@@ -1,0 +1,10 @@
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\MVC\bin\MVC.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\MVC\bin\MVC.pdb
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\MVC\obj\Debug\MVC.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\MVC\obj\Debug\MVC.pdb
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\ejemProyecto\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\MVC\bin\MVC.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\MVC\bin\MVC.pdb
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\MVC\obj\Debug\MVC.dll
+C:\Users\alexandra\Documents\Visual Studio 2010\Projects\senaSae\MVC\obj\Debug\MVC.pdb

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="proyectoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="proyectoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="APRENDIZ" EntityType="proyectoModel.APRENDIZ" />
+    <EntitySet Name="EQUIPO" EntityType="proyectoModel.EQUIPO" />
+    <EntitySet Name="ES_VALIDADO" EntityType="proyectoModel.ES_VALIDADO" />
+    <EntitySet Name="sysdiagrams" EntityType="proyectoModel.sysdiagrams" />
+    <EntitySet Name="VIGILANTE" EntityType="proyectoModel.VIGILANTE" />
+  </EntityContainer>
+  <EntityType Name="APRENDIZ">
+    <Key>
+      <PropertyRef Name="ID_APRENDIZ" />
+    </Key>
+    <Property Name="ID_APRENDIZ" Type="Int32" Nullable="false" />
+    <Property Name="APR_ID_APRENDIZ" Type="Int32" />
+    <Property Name="AP_NOMBRES" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="AP_APELLIODOS" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="AP_DIRECCION" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="AP_TELEFONO" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EQUIPO">
+    <Key>
+      <PropertyRef Name="COD_EQUIPO" />
+    </Key>
+    <Property Name="COD_EQUIPO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ID_APRENDIZ" Type="Int32" Nullable="false" />
+    <Property Name="EQ_MARCA" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="EQ_COLOR" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="EQ_PULGADAS" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="EQ_TIPOEQUIPO" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ES_VALIDADO">
+    <Key>
+      <PropertyRef Name="COD_EQUIPO" />
+      <PropertyRef Name="ID_VIGILANTE" />
+    </Key>
+    <Property Name="COD_EQUIPO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ID_VIGILANTE" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VIGILANTE">
+    <Key>
+      <PropertyRef Name="ID_VIGILANTE" />
+    </Key>
+    <Property Name="ID_VIGILANTE" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="VIG_NOMBRES" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="VIG_APELLIDOS" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="VIG_DIRECCION" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="VIG_TELEFONO" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

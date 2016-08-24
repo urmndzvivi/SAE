@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   
+   <div class="page">
+    <div class="page1">
+        <div id="header">
+            <div id="title">
+               <h1><a href="" id="logo"></a></h1>
+            </div>
+              
+            <div id="logindisplay">
+                <% Html.RenderPartial("LogOnUserControl"); %>
+            </div> 
+           
+            <div id="menucontainer">
+            
+                <ul id="menu">              
+                    <li><%: Html.ActionLink("Página principal", "Index", "Home")%></li>
+                    <li><%: Html.ActionLink("Acerca de", "About", "Home")%></li>
+                     
+                    <li><a href="">Pre-Registro Aprendiz</a></li>
+                    
+            
+
+          
+        
+                </ul>
+            
+           </div>
+            </div>
+      
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+            </div>
+         
+        </div> 
+    </div>
+    <div class="body2">
+	<div class="main">
+		<article id="content2">
+        
+			
+			
+			<section class="col_2">
+				<h3>Encuentranos en..</h3>
+				<ul id="icons">
+					<li><a href="#"><img src="images/icon1.jpg" alt="">Facebook</a></li>
+					<li><a href="#"><img src="images/icon2.jpg" alt="">Twitter</a></li>
+			
+				</ul>
+        	</section>
+			<section class="col_1">
+				<h3>Info..</h3>
+				<p class="address">
+					<span>
+						Pais:<br>
+						Ciudad:<br>
+						Email:
+					</span>
+					Colombia<br>
+					Popayan<br>
+					<a href="mailto:">@sena.edu.co</a>
+				</p>
+       		</section>
+		</article>
+<!-- / content -->
+	</div>
+</div>
+<div id="main">
+
+
+<!-- footer -->
+	<footer>
+		<a rel="nofollow" href="http://www.sena.com/" target="_blank">Copy</a> todos los derecho reservados Sena<br>
+		<a href="http://www.gogle.com/" target="_blank">Desarrolladores</a> Aprendices Sena 
+		<!-- {%FOOTER_LINK} -->
+	</footer>
+<!-- / footer -->
+</div>
+</body>
+</html>
+
